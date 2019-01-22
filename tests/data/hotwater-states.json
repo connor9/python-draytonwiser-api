@@ -1,0 +1,45 @@
+"HotWater":[
+{
+"id": 2,
+"OverrideType": "None",
+"ScheduleId": 1000,
+"Mode": "Auto",
+"WaterHeatingState": "Off",
+"HotWaterRelayState": "Off"
+}
+],
+
+"HotWater":[
+{
+"id": 2,
+"ScheduleId": 1000,
+"Mode": "Manual",
+"WaterHeatingState": "Off",
+"HotWaterRelayState": "Off"
+}
+],
+
+HotWater":[
+{
+"id": 2,
+"OverrideType": "Manual",
+"OverrideWaterHeatingState": "On",
+"ScheduleId": 1000,
+"Mode": "Auto",
+"WaterHeatingState": "On",
+"HotWaterRelayState": "On"
+}
+],
+
+"HotWater":[
+{
+"id": 2,
+"OverrideType": "Manual",
+"OverrideTimeoutUnixTime": 1517780154,
+"OverrideWaterHeatingState": "On",
+"ScheduleId": 1000,
+"Mode": "Auto",
+"WaterHeatingState": "On",
+"HotWaterRelayState": "On"
+}
+],

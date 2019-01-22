@@ -1,0 +1,1324 @@
+{
+  "System": {
+    "PairingStatus": "Paired",
+    "TimeZoneOffset": 0,
+    "AutomaticDaylightSaving": true,
+    "Version": 6,
+    "FotaEnabled": true,
+    "ValveProtectionEnabled": false,
+    "EcoModeEnabled": false,
+    "BoilerSettings": {
+      "ControlType": "HeatSourceType_RelayControlled",
+      "FuelType": "Gas",
+      "CycleRate": "CPH_6"
+    },
+    "UnixTime": 1517775517,
+    "CloudConnectionStatus": "Connected",
+    "ZigbeeModuleVersion": "R311 B030517",
+    "ZigbeeEui": "000B57FFFEAA7FC6",
+    "LocalDateAndTime": {
+      "Year": 2018,
+      "Month": "February",
+      "Date": 4,
+      "Day": "Sunday",
+      "Time": 2018
+    },
+    "HeatingButtonOverrideState": "Off",
+    "HotWaterButtonOverrideState": "Off"
+  },
+  "Cloud": {
+    "Environment": "Prod",
+    "WiserApiHost": "api-nl.wiserair.com",
+    "BootStrapApiHost": "bootstrap.gl.struxurewarecloud.com",
+    "PublishRequests": {
+      "RoomTimeSeries": false,
+      "EcoMode": false,
+      "BoilerOnOffEvent": false,
+      "PercentageDemand": false,
+      "ZigbeeDebug": false,
+      "FotaProgress": false,
+      "SupportPackage": false,
+      "PairingToken": false,
+      "Notification": false
+    },
+    "ScheduleIdsToPublish": []
+  },
+  "HeatingChannel": [
+    {
+      "id": 1,
+      "Name": "Channel-1",
+      "RoomIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "PercentageDemand": 100,
+      "DemandOnOffOutput": "Off",
+      "HeatingRelayState": "Off",
+      "IsSmartValvePreventingDemand": true
+    }
+  ],
+  "HotWater": [
+    {
+      "id": 2,
+      "OverrideType": "None",
+      "ScheduleId": 1000,
+      "Mode": "Auto",
+      "WaterHeatingState": "Off",
+      "HotWaterRelayState": "Off"
+    }
+  ],
+  "Room": [
+    {
+      "id": 1,
+      "OverrideType": "None",
+      "RoomStatId": 63270,
+      "SmartValveIds": [
+        12483,
+        3323
+      ],
+      "ScheduleId": 1001,
+      "Name": "Living Room",
+      "Mode": "Auto",
+      "DemandType": "Modulating",
+      "WindowDetectionActive": false,
+      "CalculatedTemperature": 207,
+      "CurrentSetPoint": 205,
+      "PercentageDemand": 0,
+      "ControlOutputState": "Off",
+      "WindowState": "Closed",
+      "DisplayedSetPoint": 205
+    },
+    {
+      "id": 2,
+      "OverrideType": "None",
+      "SmartValveIds": [
+        25436
+      ],
+      "ScheduleId": 1002,
+      "Name": "Kitchen",
+      "Mode": "Auto",
+      "DemandType": "Modulating",
+      "WindowDetectionActive": false,
+      "CalculatedTemperature": 180,
+      "CurrentSetPoint": 175,
+      "PercentageDemand": 0,
+      "ControlOutputState": "Off",
+      "WindowState": "Closed",
+      "DisplayedSetPoint": 175
+    },
+    {
+      "id": 3,
+      "OverrideType": "None",
+      "SmartValveIds": [
+        62258
+      ],
+      "ScheduleId": 1003,
+      "Name": "Hallway",
+      "Mode": "Auto",
+      "DemandType": "Modulating",
+      "WindowDetectionActive": false,
+      "CalculatedTemperature": 171,
+      "CurrentSetPoint": 175,
+      "PercentageDemand": 100,
+      "ControlOutputState": "On",
+      "WindowState": "Closed",
+      "DisplayedSetPoint": 175
+    },
+    {
+      "id": 4,
+      "OverrideType": "None",
+      "SmartValveIds": [
+        12711
+      ],
+      "ScheduleId": 1004,
+      "Name": "Bathroom",
+      "Mode": "Auto",
+      "DemandType": "Modulating",
+      "WindowDetectionActive": false,
+      "CalculatedTemperature": 175,
+      "CurrentSetPoint": 175,
+      "PercentageDemand": 0,
+      "ControlOutputState": "Off",
+      "WindowState": "Closed",
+      "DisplayedSetPoint": 175
+    },
+    {
+      "id": 5,
+      "OverrideType": "None",
+      "SmartValveIds": [
+        52952
+      ],
+      "ScheduleId": 1005,
+      "Name": "Front Bedroom",
+      "Mode": "Auto",
+      "DemandType": "Modulating",
+      "WindowDetectionActive": false,
+      "CalculatedTemperature": 179,
+      "CurrentSetPoint": 175,
+      "PercentageDemand": 0,
+      "ControlOutputState": "Off",
+      "WindowState": "Closed",
+      "DisplayedSetPoint": 175
+    },
+    {
+      "id": 6,
+      "OverrideType": "None",
+      "SmartValveIds": [
+        40332
+      ],
+      "ScheduleId": 1006,
+      "Name": "Back Bedroom",
+      "Mode": "Auto",
+      "DemandType": "Modulating",
+      "WindowDetectionActive": false,
+      "CalculatedTemperature": 179,
+      "CurrentSetPoint": 175,
+      "PercentageDemand": 0,
+      "ControlOutputState": "Off",
+      "WindowState": "Closed",
+      "DisplayedSetPoint": 175
+    },
+    {
+      "id": 7,
+      "OverrideType": "None",
+      "SmartValveIds": [
+        8288
+      ],
+      "ScheduleId": 1007,
+      "Name": "Top Bedroom",
+      "Mode": "Auto",
+      "DemandType": "Modulating",
+      "WindowDetectionActive": false,
+      "CalculatedTemperature": 141,
+      "CurrentSetPoint": 140,
+      "PercentageDemand": 0,
+      "ControlOutputState": "Off",
+      "WindowState": "Closed",
+      "DisplayedSetPoint": 140
+    }
+  ],
+  "Schedule": [
+    {
+      "id": 1000,
+      "Monday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 1100
+          },
+          {
+            "Time": 1000,
+            "DegreesC": -200
+          },
+          {
+            "Time": 1700,
+            "DegreesC": 1100
+          },
+          {
+            "Time": 2000,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Tuesday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 1100
+          },
+          {
+            "Time": 1000,
+            "DegreesC": -200
+          },
+          {
+            "Time": 1700,
+            "DegreesC": 1100
+          },
+          {
+            "Time": 2000,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Wednesday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 1100
+          },
+          {
+            "Time": 1000,
+            "DegreesC": -200
+          },
+          {
+            "Time": 1700,
+            "DegreesC": 1100
+          },
+          {
+            "Time": 2000,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Thursday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 1100
+          },
+          {
+            "Time": 1000,
+            "DegreesC": -200
+          },
+          {
+            "Time": 1700,
+            "DegreesC": 1100
+          },
+          {
+            "Time": 2000,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Friday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 1100
+          },
+          {
+            "Time": 1000,
+            "DegreesC": -200
+          },
+          {
+            "Time": 1700,
+            "DegreesC": 1100
+          },
+          {
+            "Time": 2000,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Saturday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 1100
+          },
+          {
+            "Time": 1000,
+            "DegreesC": -200
+          },
+          {
+            "Time": 1700,
+            "DegreesC": 1100
+          },
+          {
+            "Time": 2000,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Sunday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 1100
+          },
+          {
+            "Time": 1000,
+            "DegreesC": -200
+          },
+          {
+            "Time": 1700,
+            "DegreesC": 1100
+          },
+          {
+            "Time": 2000,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Type": "HotWater",
+      "CurrentSetpoint": -200,
+      "NextEventTime": 390,
+      "NextEventSetpoint": 1100
+    },
+    {
+      "id": 1001,
+      "Monday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 205
+          },
+          {
+            "Time": 1800,
+            "DegreesC": 205
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Tuesday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 205
+          },
+          {
+            "Time": 1800,
+            "DegreesC": 205
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Wednesday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 205
+          },
+          {
+            "Time": 1800,
+            "DegreesC": 205
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Thursday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 205
+          },
+          {
+            "Time": 1800,
+            "DegreesC": 205
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Friday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 205
+          },
+          {
+            "Time": 1800,
+            "DegreesC": 205
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Saturday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 205
+          },
+          {
+            "Time": 1800,
+            "DegreesC": 205
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Sunday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 205
+          },
+          {
+            "Time": 1800,
+            "DegreesC": 205
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Type": "Heating",
+      "CurrentSetpoint": 205,
+      "NextEventTime": 1380,
+      "NextEventSetpoint": -200
+    },
+    {
+      "id": 1002,
+      "Monday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Tuesday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Wednesday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Thursday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Friday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Saturday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Sunday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Type": "Heating",
+      "CurrentSetpoint": 175,
+      "NextEventTime": 1380,
+      "NextEventSetpoint": -200
+    },
+    {
+      "id": 1003,
+      "Monday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Tuesday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Wednesday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Thursday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Friday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Saturday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Sunday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Type": "Heating",
+      "CurrentSetpoint": 175,
+      "NextEventTime": 1380,
+      "NextEventSetpoint": -200
+    },
+    {
+      "id": 1004,
+      "Monday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Tuesday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Wednesday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Thursday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Friday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Saturday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Sunday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Type": "Heating",
+      "CurrentSetpoint": 175,
+      "NextEventTime": 1380,
+      "NextEventSetpoint": -200
+    },
+    {
+      "id": 1005,
+      "Monday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Tuesday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Wednesday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Thursday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Friday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Saturday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Sunday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Type": "Heating",
+      "CurrentSetpoint": 175,
+      "NextEventTime": 1380,
+      "NextEventSetpoint": -200
+    },
+    {
+      "id": 1006,
+      "Monday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Tuesday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Wednesday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Thursday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Friday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Saturday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Sunday": {
+        "SetPoints": [
+          {
+            "Time": 630,
+            "DegreesC": 175
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Type": "Heating",
+      "CurrentSetpoint": 175,
+      "NextEventTime": 1380,
+      "NextEventSetpoint": -200
+    },
+    {
+      "id": 1007,
+      "Monday": {
+        "SetPoints": [
+          {
+            "Time": 1800,
+            "DegreesC": 140
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Tuesday": {
+        "SetPoints": [
+          {
+            "Time": 1800,
+            "DegreesC": 140
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Wednesday": {
+        "SetPoints": [
+          {
+            "Time": 1800,
+            "DegreesC": 140
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Thursday": {
+        "SetPoints": [
+          {
+            "Time": 1800,
+            "DegreesC": 140
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Friday": {
+        "SetPoints": [
+          {
+            "Time": 1800,
+            "DegreesC": 140
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Saturday": {
+        "SetPoints": [
+          {
+            "Time": 1800,
+            "DegreesC": 140
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Sunday": {
+        "SetPoints": [
+          {
+            "Time": 1800,
+            "DegreesC": 140
+          },
+          {
+            "Time": 2300,
+            "DegreesC": -200
+          }
+        ]
+      },
+      "Type": "Heating",
+      "CurrentSetpoint": 140,
+      "NextEventTime": 1380,
+      "NextEventSetpoint": -200
+    }
+  ],
+  "Device": [
+    {
+      "id": 0,
+      "ProductType": "Controller",
+      "ProductIdentifier": "Controller",
+      "ActiveFirmwareVersion": "2.18.100",
+      "Manufacturer": "Schneider",
+      "ModelIdentifier": "WT724R1S0902",
+      "DisplayedSignalStrength": "VeryGood",
+      "Rssi": -40
+    },
+    {
+      "id": 63270,
+      "ProductIdentifier": "RoomStat",
+      "ActiveFirmwareVersion": "0401000000002371",
+      "Manufacturer": "Schneider",
+      "ModelIdentifier": "Thermostat",
+      "HardwareVersion": "0",
+      "SerialNumber": "000B57FFFE5516AA",
+      "ProductRange": "Wiser Heat",
+      "ProductModel": "Thermostat",
+      "ProductFamily": "Wiser Heat",
+      "OtaImageQueryCount": 0,
+      "LastOtaImageQueryCount": 0,
+      "DisplayedSignalStrength": "VeryGood",
+      "BatteryVoltage": 29,
+      "BatteryLevel": "Normal",
+      "Rssi": -59,
+      "Lqi": 164
+    },
+    {
+      "id": 12483,
+      "ProductIdentifier": "iTRV",
+      "ActiveFirmwareVersion": "0201000000002371",
+      "Manufacturer": "Schneider",
+      "ModelIdentifier": "iTRV",
+      "HardwareVersion": "0",
+      "SerialNumber": "90FD9FFFFE62D27C",
+      "ProductRange": "Wiser Heat",
+      "ProductModel": "iTRV",
+      "ProductFamily": "Wiser Heat",
+      "OtaImageQueryCount": 0,
+      "LastOtaImageQueryCount": 0,
+      "DisplayedSignalStrength": "VeryGood",
+      "BatteryVoltage": 29,
+      "BatteryLevel": "Normal",
+      "Rssi": -55,
+      "Lqi": 180,
+      "PendingZigbeeMessageMask": 0
+    },
+    {
+      "id": 3323,
+      "ProductIdentifier": "iTRV",
+      "ActiveFirmwareVersion": "0201000000002371",
+      "Manufacturer": "Schneider",
+      "ModelIdentifier": "iTRV",
+      "HardwareVersion": "0",
+      "SerialNumber": "90FD9FFFFE62D30A",
+      "ProductRange": "Wiser Heat",
+      "ProductModel": "iTRV",
+      "ProductFamily": "Wiser Heat",
+      "OtaImageQueryCount": 0,
+      "LastOtaImageQueryCount": 0,
+      "DisplayedSignalStrength": "Good",
+      "BatteryVoltage": 29,
+      "BatteryLevel": "Normal",
+      "Rssi": -64,
+      "Lqi": 144,
+      "PendingZigbeeMessageMask": 0
+    },
+    {
+      "id": 25436,
+      "ProductIdentifier": "iTRV",
+      "ActiveFirmwareVersion": "0201000000002371",
+      "Manufacturer": "Schneider",
+      "ModelIdentifier": "iTRV",
+      "HardwareVersion": "0",
+      "SerialNumber": "90FD9FFFFE5191E0",
+      "ProductRange": "Wiser Heat",
+      "ProductModel": "iTRV",
+      "ProductFamily": "Wiser Heat",
+      "OtaImageQueryCount": 0,
+      "LastOtaImageQueryCount": 0,
+      "DisplayedSignalStrength": "Good",
+      "BatteryVoltage": 29,
+      "BatteryLevel": "Normal",
+      "Rssi": -70,
+      "Lqi": 120,
+      "PendingZigbeeMessageMask": 0
+    },
+    {
+      "id": 62258,
+      "ProductIdentifier": "iTRV",
+      "ActiveFirmwareVersion": "0201000000002371",
+      "Manufacturer": "Schneider",
+      "ModelIdentifier": "iTRV",
+      "HardwareVersion": "0",
+      "SerialNumber": "90FD9FFFFE519351",
+      "ProductRange": "Wiser Heat",
+      "ProductModel": "iTRV",
+      "ProductFamily": "Wiser Heat",
+      "OtaImageQueryCount": 0,
+      "LastOtaImageQueryCount": 1,
+      "DisplayedSignalStrength": "Good",
+      "BatteryVoltage": 29,
+      "BatteryLevel": "Normal",
+      "Rssi": -64,
+      "Lqi": 144,
+      "PendingZigbeeMessageMask": 0
+    },
+    {
+      "id": 12711,
+      "ProductIdentifier": "iTRV",
+      "ActiveFirmwareVersion": "0201000000002371",
+      "Manufacturer": "Schneider",
+      "ModelIdentifier": "iTRV",
+      "HardwareVersion": "0",
+      "SerialNumber": "90FD9FFFFE518FDD",
+      "ProductRange": "Wiser Heat",
+      "ProductModel": "iTRV",
+      "ProductFamily": "Wiser Heat",
+      "OtaImageQueryCount": 0,
+      "LastOtaImageQueryCount": 1,
+      "DisplayedSignalStrength": "Medium",
+      "BatteryVoltage": 29,
+      "BatteryLevel": "Normal",
+      "Rssi": -79,
+      "Lqi": 84,
+      "PendingZigbeeMessageMask": 0
+    },
+    {
+      "id": 52952,
+      "ProductIdentifier": "iTRV",
+      "ActiveFirmwareVersion": "0201000000002371",
+      "Manufacturer": "Schneider",
+      "ModelIdentifier": "iTRV",
+      "HardwareVersion": "0",
+      "SerialNumber": "90FD9FFFFE62D2F7",
+      "ProductRange": "Wiser Heat",
+      "ProductModel": "iTRV",
+      "ProductFamily": "Wiser Heat",
+      "OtaImageQueryCount": 0,
+      "LastOtaImageQueryCount": 1,
+      "DisplayedSignalStrength": "Good",
+      "BatteryVoltage": 29,
+      "BatteryLevel": "Normal",
+      "Rssi": -63,
+      "Lqi": 148,
+      "PendingZigbeeMessageMask": 0
+    },
+    {
+      "id": 40332,
+      "ProductIdentifier": "iTRV",
+      "ActiveFirmwareVersion": "0201000000002371",
+      "Manufacturer": "Schneider",
+      "ModelIdentifier": "iTRV",
+      "HardwareVersion": "0",
+      "SerialNumber": "90FD9FFFFE62D3CD",
+      "ProductRange": "Wiser Heat",
+      "ProductModel": "iTRV",
+      "ProductFamily": "Wiser Heat",
+      "OtaImageQueryCount": 0,
+      "LastOtaImageQueryCount": 1,
+      "DisplayedSignalStrength": "VeryGood",
+      "BatteryVoltage": 29,
+      "BatteryLevel": "Normal",
+      "Rssi": -49,
+      "Lqi": 204,
+      "PendingZigbeeMessageMask": 0
+    },
+    {
+      "id": 8288,
+      "ProductIdentifier": "iTRV",
+      "ActiveFirmwareVersion": "0201000000002371",
+      "Manufacturer": "Schneider",
+      "ModelIdentifier": "iTRV",
+      "HardwareVersion": "0",
+      "SerialNumber": "90FD9FFFFE518342",
+      "ProductRange": "Wiser Heat",
+      "ProductModel": "iTRV",
+      "ProductFamily": "Wiser Heat",
+      "OtaImageQueryCount": 0,
+      "LastOtaImageQueryCount": 1,
+      "DisplayedSignalStrength": "Good",
+      "BatteryVoltage": 30,
+      "BatteryLevel": "Normal",
+      "Rssi": -70,
+      "Lqi": 120,
+      "PendingZigbeeMessageMask": 0
+    }
+  ],
+  "UpgradeInfo": [
+    {
+      "id": 9,
+      "FirmwareFilename": "0541010100000018FOTA.BIN"
+    },
+    {
+      "id": 8,
+      "FirmwareFilename": "0541000000000018FOTA.BIN"
+    },
+    {
+      "id": 7,
+      "FirmwareFilename": "0501010100000018FOTA.BIN"
+    },
+    {
+      "id": 6,
+      "FirmwareFilename": "0501000000000018FOTA.BIN"
+    },
+    {
+      "id": 5,
+      "FirmwareFilename": "0441010100002371FOTA.BIN"
+    },
+    {
+      "id": 4,
+      "FirmwareFilename": "0441000000002371FOTA.BIN"
+    },
+    {
+      "id": 3,
+      "FirmwareFilename": "0401010100002371FOTA.BIN"
+    },
+    {
+      "id": 2,
+      "FirmwareFilename": "0401000000002371FOTA.BIN"
+    },
+    {
+      "id": 1,
+      "FirmwareFilename": "0201000000002371FOTA.BIN"
+    }
+  ],
+  "SmartValve": [
+    {
+      "id": 12483,
+      "MountingOrientation": "Vertical",
+      "SetPoint": 205,
+      "MeasuredTemperature": 176,
+      "PercentageDemand": 0,
+      "WindowState": "Closed",
+      "ExternalRoomStatTemperature": 207
+    },
+    {
+      "id": 25436,
+      "MountingOrientation": "Vertical",
+      "SetPoint": 175,
+      "MeasuredTemperature": 180,
+      "PercentageDemand": 0,
+      "WindowState": "Closed"
+    },
+    {
+      "id": 62258,
+      "MountingOrientation": "Vertical",
+      "SetPoint": 175,
+      "MeasuredTemperature": 171,
+      "PercentageDemand": 0,
+      "WindowState": "Closed"
+    },
+    {
+      "id": 12711,
+      "MountingOrientation": "Vertical",
+      "SetPoint": 175,
+      "MeasuredTemperature": 175,
+      "PercentageDemand": 0,
+      "WindowState": "Closed"
+    },
+    {
+      "id": 52952,
+      "MountingOrientation": "Vertical",
+      "SetPoint": 175,
+      "MeasuredTemperature": 179,
+      "PercentageDemand": 0,
+      "WindowState": "Closed"
+    },
+    {
+      "id": 40332,
+      "MountingOrientation": "Vertical",
+      "SetPoint": 175,
+      "MeasuredTemperature": 179,
+      "PercentageDemand": 0,
+      "WindowState": "Closed"
+    },
+    {
+      "id": 8288,
+      "MountingOrientation": "Vertical",
+      "SetPoint": 140,
+      "MeasuredTemperature": 141,
+      "PercentageDemand": 0,
+      "WindowState": "Closed"
+    },
+    {
+      "id": 3323,
+      "MountingOrientation": "Vertical",
+      "SetPoint": 205,
+      "MeasuredTemperature": 170,
+      "PercentageDemand": 0,
+      "WindowState": "Closed",
+      "ExternalRoomStatTemperature": 207
+    }
+  ],
+  "RoomStat": [
+    {
+      "id": 63270,
+      "SetPoint": 205,
+      "MeasuredTemperature": 207,
+      "MeasuredHumidity": 44
+    }
+  ]
+}
