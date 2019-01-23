@@ -1,6 +1,10 @@
+# -*- coding: utf-8 -*-
+
 from .wiserapi import WiserBaseAPI
 
 class System(WiserBaseAPI):
+    """Represnts the /System object in the Restful API"""
+
     def __init__(self, *args, **kwargs):
         # Defining default values
 

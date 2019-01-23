@@ -1,0 +1,5 @@
+requests>=2,<3
+
+# Testing requirements
+responses>=0.10.5
+pytest

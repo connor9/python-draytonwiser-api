@@ -1,3 +1,23 @@
+# -*- coding: utf-8 -*-
+"""Base object for interacting with Wiser Heat Hub API
+
+    The WiseBaseAPI is the root object for all classes that represent a /data/domain/[item] endpoint like
+    Room or Device. These inherit from WiserBaseAPI as this allow the base class to handle all the dirty work
+    translating queries into HTTP requests.
+
+    The endpoints and manager class can then use simpler notation to get back JSON return objects.
+    I.e.
+        url = "System/{}".format(id)
+        heating_channel_data_json = self.get_data(url)
+
+        heating_channel = HeatingChannel(**heating_channel_data)
+
+    With those calls the HeatingChannel class object is istantiated with the correct values from the JSON object
+    via the get_data request.
+
+    Each call to get_data will either send an HTTP request or the cache will return the data for it.
+"""
+
 import logging
 
 import requests
@@ -15,6 +35,9 @@ WISER_HUB_URL = "http://{}/data/domain/"
 # TODO: Move to helper
 # https://stackoverflow.com/questions/1175208/elegant-python-function-to-convert-camelcase-to-snake-case
 def _convert_case(name):
+    """Converts SomeSpecialVariable type names to some_special_variable
+    for JSON to python object translation
+    """
     step1 = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', name)
     return re.sub('([a-z0-9])([A-Z])', r'\1_\2', step1).lower()
 
@@ -53,7 +76,12 @@ class WiserBaseAPI(object):
         self.get_data("")
 
     def get_data(self, item, params=None):
+        """GET requests to Wiser Home hub
 
+        Has a simple form of data caching added to handle cases when the Heat Hub is unresponsive.
+        TODO: Make this easier to configure and specify how it works.
+
+        """
         WiserBaseAPI._data_query_count += 1
 
         # Check for data in cache
@@ -105,6 +133,7 @@ class WiserBaseAPI(object):
         return self._parse_item_data(item, data)
 
     def patch_data(self, item, params=None):
+        """PATCH requests to Wiser Home hub"""
 
         url = "http://{}/data/domain/{}".format(self.wiser_hub_ip, item)
 
@@ -137,24 +166,13 @@ class WiserBaseAPI(object):
     #   This parsing routine will make sure the correct query returns the correct subset
     #   of data like it had been real direct API call.
 
-    def _get_item_if_exists(self, item, data):
-        item_id = item[item.index('/') + 1:]
-        if len(item_id) > 0 and item_id is not None:
-            # we have an id
-            item_id = int(item_id)
-            found = False
-            if item_id >= 0:
-                for temp_item in data:
-                    if temp_item['id'] == item_id:
-                        data = temp_item
-                        found = True
-                        break
-            if not found:
-                raise ObjectNotFoundException("Item ID not found")
-
-        return data
-
     def _parse_item_data(self, item, data):
+        """Parses data from /data/domain/ call to serve it as if /data/domain/[Item]/[ID] was called
+
+            This has been added to provide compatibility for the library supporting direct restful
+            calls to specific endpoints. At the moment each call gets the root /data/domain/ for caching
+             but may be split out into separate calls when caching is made more robust.
+        """
 
         if item.startswith('HeatingChannel'):
             data = self._get_item_if_exists(item, data['HeatingChannel'])
@@ -175,6 +193,23 @@ class WiserBaseAPI(object):
         elif item.startswith('Schedule'):
             data = self._get_item_if_exists(item, data['Schedule'])
 
+        return data
 
+    def _get_item_if_exists(self, item, data):
+        """Retrieves the JSON object for a specific ID of a /data/domain/[item]/[id] call"""
+
+        item_id = item[item.index('/') + 1:]
+        if len(item_id) > 0 and item_id is not None:
+            # we have an id
+            item_id = int(item_id)
+            found = False
+            if item_id >= 0:
+                for temp_item in data:
+                    if temp_item['id'] == item_id:
+                        data = temp_item
+                        found = True
+                        break
+            if not found:
+                raise ObjectNotFoundException("Item ID not found")
 
         return data

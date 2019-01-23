@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class APIException(Exception):
     """Base exception class for this module"""
     pass

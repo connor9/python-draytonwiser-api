@@ -1,6 +1,10 @@
+# -*- coding: utf-8 -*-
+
 from .wiserapi import WiserBaseAPI, _convert_case
 
 class Room(WiserBaseAPI):
+    """Represnts the /Room object in the Restful API"""
+
     def __init__(self, *args, **kwargs):
 
         # Defining default values

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 
 from .wiserapi import WiserBaseAPI, _convert_case
 
@@ -7,6 +8,8 @@ class SetPoint:
         self.temperature = None
 
 class Schedule(WiserBaseAPI):
+    """Represnts the /Schedule object in the Restful API"""
+
     def __init__(self, *args, **kwargs):
 
         # Defining default values

@@ -14,5 +14,5 @@ manager = draytonwiser.Manager(wiser_hub_ip=json_data['wiser_hub_ip'], api_secre
 room = manager.get_room(3)
 
 room.set_boost(30, 18)
-sleep(10)
-room.cancel_boost()
+
+# room.cancel_boost() - You can call this to cancel the boost.

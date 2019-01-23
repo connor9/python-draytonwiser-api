@@ -1,3 +1,15 @@
+# -*- coding: utf-8 -*-
+"""Drayton Wiser API Client Library
+
+API library to manage interactions with your Drayton Wiser Home hub.
+
+"""
+
+__version__ = "1.0.0"
+__author__ = "David Connor"
+__author_email__ = "dconnor@gmail.com"
+__license__ = "MIT"
+
 from .wiserapi import WiserBaseAPI
 from .exceptions import *
 

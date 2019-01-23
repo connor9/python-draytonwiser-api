@@ -1,3 +1,18 @@
+# -*- coding: utf-8 -*-
+"""Manager object for retrieving objects from Heat Hub.
+
+    The Heat hub client library is generally meant to be used via the Manager class for retrieving data and setting
+    up classes for post backs.
+
+    i.e.
+        import draytonwiser
+        manager = draytonwiser.Manager(wiser_hub_ip=HUB_IP_ADDRESS, api_secret=API_SECRET)
+        devices = manager.get_all_devices()
+
+    TODO: More about this architecture.
+
+"""
+
 from .wiserapi import WiserBaseAPI
 
 from .system import System

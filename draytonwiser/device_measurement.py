@@ -1,3 +1,11 @@
+# -*- coding: utf-8 -*-
+"""Device Measurement
+
+    This is an abstraction of the RoomStat and SmartValve objects that get attached to Devices. Because the core
+    device contains settings and core state properties, these related objects have what are effectively the measurements
+    of what the device does. The stateful properties on the core device.
+
+    """
 
 from .wiserapi import WiserBaseAPI
 

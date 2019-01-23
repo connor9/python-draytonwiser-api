@@ -1,8 +1,10 @@
+# -*- coding: utf-8 -*-
 
 from .wiserapi import WiserBaseAPI, _convert_case
 
 class HotWater(WiserBaseAPI):
     def __init__(self, *args, **kwargs):
+        """Represnts the /HotWater object in the Restful API"""
 
         # Defining default values
 

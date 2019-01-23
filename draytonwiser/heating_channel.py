@@ -1,7 +1,11 @@
+# -*- coding: utf-8 -*-
 
 from .wiserapi import WiserBaseAPI, _convert_case
 
-class HeatingChannel(WiserBaseAPI):
+class HeatingChannel(WiserBaseAPI):#
+    """Represnts the /HeatingChannel object in the Restful API"""
+
+
     def __init__(self, *args, **kwargs):
 
         # Defining default values
