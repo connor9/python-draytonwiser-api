@@ -159,6 +159,21 @@ Use pytest to run the test library. Use a virtual environment for testing with e
 To run all the tests:
 
     $ python3 -m pytest
+    
+### Testing with Docker
+
+You can also test this library with docker if you don't have a local copy of python
+installed.
+
+To build the container image:
+
+    docker build -t "python-draytonwiser-api-tests" .
+    
+Then you can run all the tests:
+
+    docker run python-draytonwiser-api-tests
+    
+You can remove any containers and images created after these tests.    
 
 ## Links
 
